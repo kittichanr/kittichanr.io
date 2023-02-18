@@ -1,5 +1,3 @@
-'use client'
-
 import localFont from '@next/font/local'
 import clsx from 'clsx'
 import AnalyticsWrapper from '../components/analytics'
@@ -34,7 +32,7 @@ export const metadata = {
 		card: 'summary_large_image',
 	},
 	icons: {
-		shortcut: '/static/favicons/favicon.ico',
+		shortcut: '/favicon.ico',
 	},
 	// verification: {
 	//     google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',

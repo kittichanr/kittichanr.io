@@ -11,7 +11,7 @@ export const metadata = {
 		siteName: 'Petch Kittichan',
 		images: [
 			{
-				url: '../public/avatar.jpg',
+				url: '../app/avatar.jpg',
 				width: 1920,
 				height: 1080,
 			},
