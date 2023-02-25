@@ -3,6 +3,7 @@
 	"extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended", "prettier"],
 	"rules": {
 		"semi": ["error", "never"],
+		"react/no-unescaped-entities": 0,
 		"@typescript-eslint/no-var-requires": 0
 		// "@typescript-eslint/no-unused-vars": "error"
 		// 	"@typescript-eslint/no-explicit-any": "error"

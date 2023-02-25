@@ -36,7 +36,9 @@ export default function HomePage() {
 					priority
 				/>
 				<div className="mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-500 dark:text-neutral-400">
-					{quote()}
+					<div className="p-3 font-normal text-gray-500 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
+						{quote()}
+					</div>
 				</div>
 			</div>
 			<h2 className="text-gray-700 dark:text-gray-200 mb-4">{bio()}</h2>
