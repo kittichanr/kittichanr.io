@@ -1,4 +1,8 @@
-export const metadata = {
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { allSnippets } from 'contentlayer/generated'
+
+export const metadata: Metadata = {
 	title: 'Code Snippet',
 	description:
 		'A collection of code snippets – including serverless functions, Node.js scripts, and CSS tricks.',
@@ -6,10 +10,26 @@ export const metadata = {
 
 export default function SnippetPage() {
 	return (
-		<div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
-			<h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
-				Code Snippet
-			</h1>
-		</div>
+		<section>
+			<h1 className="font-bold text-3xl font-serif mb-5">Snippet</h1>
+			{allSnippets
+				.sort((a, b) => {
+					if (new Date(a.publishedAt) > new Date(b.publishedAt)) {
+						return -1
+					}
+					return 1
+				})
+				.map((post) => (
+					<Link
+						key={post.slug}
+						className="flex flex-col space-y-1 mb-4"
+						href={`/snippet/${post.slug}`}>
+						<div className="w-full flex flex-col">
+							<p>{post.title}</p>
+							<p>{post.publishedAt}</p>
+						</div>
+					</Link>
+				))}
+		</section>
 	)
 }

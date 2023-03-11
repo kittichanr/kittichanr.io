@@ -89,9 +89,12 @@ function Logo() {
 }
 
 export default function Navbar() {
-	let pathname = usePathname()
+	let pathname = usePathname() || '/'
 	if (pathname.includes('/blog/')) {
 		pathname = '/blog'
+	}
+	if (pathname.includes('/snippet/')) {
+		pathname = '/snippet'
 	}
 
 	return (

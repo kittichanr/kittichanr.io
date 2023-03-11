@@ -1,13 +1,37 @@
-export const metadata = {
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { allBlogs } from 'contentlayer/generated'
+// import ViewCounter from './view-counter'
+
+export const metadata: Metadata = {
 	title: 'Blog',
-	description: 'Thoughts on the software industry, programming, tech, music, and my personal life.',
+	description: 'Read my thoughts on software development, design, and more.',
 }
-export default function BlogPage() {
+
+export default async function BlogPage() {
 	return (
-		<div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
-			<h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
-				Blog
-			</h1>
-		</div>
+		<section>
+			<h1 className="font-bold text-3xl font-serif mb-5">Blog</h1>
+			{allBlogs
+				.sort((a, b) => {
+					if (new Date(a.publishedAt) > new Date(b.publishedAt)) {
+						return -1
+					}
+					return 1
+				})
+				.map((post) => (
+					<Link
+						key={post.slug}
+						className="flex flex-col space-y-1 mb-4"
+						href={`/blog/${post.slug}`}>
+						<div className="w-full flex flex-col">
+							<p>{post.title}</p>
+							<p>{post.publishedAt}</p>
+							{/* TODO: need implement track api by myself */}
+							{/* <ViewCounter slug={post.slug} trackView={false} /> */}
+						</div>
+					</Link>
+				))}
+		</section>
 	)
 }
