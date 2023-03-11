@@ -32,13 +32,13 @@ const navItems = {
 	},
 	'/source': {
 		name: 'source',
-		x: 260,
+		x: 255,
 		y: 138,
 		w: '76px',
 	},
 	'/uses': {
 		name: 'uses',
-		x: 310,
+		x: 332,
 		y: 172,
 		w: '52px',
 	},
