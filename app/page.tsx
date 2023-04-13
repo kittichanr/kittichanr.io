@@ -58,9 +58,19 @@ export default function HomePage() {
 						className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
 						rel="noopener noreferrer"
 						target="_blank"
-						href="">
+						href="mailto:petchkubbb@gmail.com">
 						<ArrowIcon />
 						<p className="h-7">contract me in email</p>
+					</a>
+				</li>
+				<li>
+					<a
+						className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
+						rel="noopener noreferrer"
+						target="_blank"
+						href="https://drive.google.com/file/d/1139Bi-o3zSoOb3ICaKzgGGdnC5Ldwyb1/view?usp=share_link">
+						<ArrowIcon />
+						<p className="h-7">download cv</p>
 					</a>
 				</li>
 			</ul>

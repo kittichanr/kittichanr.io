@@ -24,7 +24,7 @@ export const quote = () => {
 		<>
 			<p className="italic text-gray-600 dark:text-gray-400 mb-4">
 				“Any fool can write code that a computer can understand. Good programmers write code that
-				humans can understand.“ -<b>Martin Fowler</b>
+				humans can understand.“ - <b>Martin Fowler</b>
 			</p>
 			<p className="italic text-gray-600 dark:text-gray-400">
 				“First, solve the problem. Then, write the code.” - <b>John Johnson</b>
