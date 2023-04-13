@@ -14,6 +14,17 @@ export default function resourcePage() {
 				applications and much more. 🔥
 			</p>
 			<h2 className="w-fit font-bold text-xl font-serif  mt-8 text-black dark:text-white border-b-4 border-black-300">
+				Deployment
+			</h2>
+			<div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full mt-4">
+				<ResourcesCard
+					title="Vercel"
+					link="https://vercel.com/dashboard"
+					websiteLink="vercel.com/dashboard"
+					description="deployment project"
+				/>
+			</div>
+			<h2 className="w-fit font-bold text-xl font-serif  mt-8 text-black dark:text-white border-b-4 border-black-300">
 				Blog
 			</h2>
 			<div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full mt-4">
