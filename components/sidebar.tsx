@@ -30,11 +30,11 @@ const navItems = {
 		y: 104,
 		w: '78px',
 	},
-	'/source': {
-		name: 'source',
-		x: 255,
+	'/resource': {
+		name: 'resource',
+		x: 260,
 		y: 138,
-		w: '76px',
+		w: '84px',
 	},
 	'/uses': {
 		name: 'uses',
