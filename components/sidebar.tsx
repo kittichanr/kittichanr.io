@@ -36,11 +36,11 @@ const navItems = {
 		y: 138,
 		w: '84px',
 	},
-	'/uses': {
-		name: 'uses',
-		x: 332,
+	'/book': {
+		name: 'book',
+		x: 346,
 		y: 172,
-		w: '52px',
+		w: '58px',
 	},
 }
 
